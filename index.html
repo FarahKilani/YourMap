@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Skeleton app</title>
+
+    <!-- CSS
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+
+
+        <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=oeTUBZ3Ka51jhZOAAw1tH3JAAGxDPwWa"></script>
+        <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=oeTUBZ3Ka51jhZOAAw1tH3JAAGxDPwWa"></script>
+        <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=oeTUBZ3Ka51jhZOAAw1tH3JAAGxDPwWa"></script>
+
+    <style>
+    #map{
+        height: 400px;
+        width: 800px;
+        border: 2px solid black;
+        margin-right: auto;
+        margin-left:auto;
+    }
+    </style>
+
+  </head>
+
+  <body ng-app="myApp" >
+
+    <!-- header
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+    <!-- dynamic content placeholder
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <div ui-view>
+    </div>
+
+
+    <!-- libraries
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <script src="jslibs/angular.min.js"></script>
+    <script src="jslibs/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="jslibs/tabletop.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/client:plusone.js" type="text/javascript"></script>
+
+
+    <!-- controllers
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <script src="js/myapp.js"></script>
+    <script src="js/samplefactory.js"></script>
+    <script src="home/homecontroller.js"></script>
+    <script src="page2/page2controller.js"></script>
+    <script src="register/registercontroller.js"></script>
+    <script src="seconnecter/seconnectercontroller.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="css/cssslider.css">
+<div class="w3-margin" ng-controller="RegisterController">
+
+  <div id="slider">
+  <ul class="slideshow">
+    <li><span>Image 01</span><div class="bloc"><h3 >Plan your trip</h3></div></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+  </ul>
+
+
+ <div class="container">
+      <p style="font-size:50px; color: #ffffff">Register now</p>
+
+      <br><br>
+       <input type="text" ng-model="firstname" placeholder="firstname">
+       <input type="text" ng-model="lastname" placeholder="lastname">
+    <button id="bouton" ng-click="ajouter()" type="button" class="w3-btn w3-red w3-round-small">Register</button>
+    <br>
+    <p style="font-size:30px; color: #ffffff">Already registered? Login to our app!</p>
+    <button id="bouton" ng-click="seconnecter()"type="button" class="w3-btn w3-red w3-round-small">Login</button>
+
+    <p style="font-size:30px; color: #ffffff">Want to leave a comment or feedback to us? Enter your comment anonymously here</p>
+    <textarea rows="4" cols="50" [(ngModel)]="commentaire">
+    Your comment here.
+    </textarea>
+    <button id="bouton" ng-click="ajouter_com()" type="button" class="w3-btn w3-red w3-round-small">Submit</button>
+</div>
+
+</div>

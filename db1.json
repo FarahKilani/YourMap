@@ -1,0 +1,45 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "firstname": "louis",
+      "name": "gentil",
+      "itineraires": []
+    },
+    {
+      "id": 2,
+      "firstname": "amina",
+      "name": "smart"
+    },
+    {
+      "id": 3,
+      "firstname": "jean",
+      "name": "dupond"
+    },
+    {
+      "firstname": "jean-michel",
+      "name": "dubois",
+      "id": 4
+    },
+    {
+      "firstname": "johnny",
+      "name": "hallyday",
+      "id": 5
+    },
+    {
+      "firstname": "farah",
+      "name": "",
+      "id": 6
+    },
+    {
+      "firstname": "farah",
+      "name": "kilani",
+      "id": 7
+    },
+    {
+      "firstname": "farah",
+      "name": "",
+      "id": 8
+    }
+  ]
+}

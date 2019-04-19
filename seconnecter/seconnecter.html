@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="css/cssslider.css">
+<div class="w3-margin" ng-controller="SeconnecterController">
+
+  <div id="slider">
+  <ul class="slideshow">
+    <li><span>Image 01</span><div class="bloc"><h3 >Plan your trip</h3></div></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+  </ul>
+
+
+ <div class="container">
+      <p style="font-size:50px; color: #ffffff">Login now</p>
+
+      <br><br>
+      <div hide-when-connected>
+       <input type="text" ng-model="firstname" placeholder="firstname">
+       <input type="text" ng-model="lastname" placeholder="lastname">
+    <button id="bouton" ng-click="seconnecter()" type="button" class="w3-btn w3-red w3-round-small">Login</button>
+    <br>
+        </div>
+    <div show-when-connected>
+          <p>  Bonjour {{firstname}} </p>
+            <button id="bouton" ng-click="sedeconnecter()" type="button" class="w3-btn w3-red w3-round-small">Logout</button>
+    </div>
+    <br>
+    <button id="bouton" ng-click="verify()" type="button" class="w3-btn w3-red w3-round-small">Start your journey!</button>
+
+    <button id="bouton" ng-click="gotohome()" type="button" class="w3-btn w3-red w3-round-small" style="position: relative; bottom: 0px; left:0px;">Back</button>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,70 @@
+
+<style>
+.vertical-menu {
+  width: 300px;
+  height: auto;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+.vertical-menu button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 80%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.vertical-menu button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.vertical-menu button:hover {
+  background-color: #3e8e41;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top:20px;
+  padding-top: 10px;
+}
+#map_container{
+  width: 70%;
+  display: block;
+}
+body{
+  background-color: rgb(191, 196, 204, 0.5);
+}
+</style>
+<div class="w3-margin" ng-controller="Page2Controller" onload="initialiser()">
+
+  <p style="font-size:45px; text-align: center;">YourMap !</p>
+  <br>
+    <div show-when-connected>
+<button id="bouton" ng-click="ajouter()" type="button" class="w3-btn w3-red w3-round-small" style="background-color: red; position : absolute; right:0px; up: 0px; color: #ffffff;">Show saved itineraries</button>
+</div>
+  <br>
+
+<input type="text" ng-model="destination" placeholder="votre destination">
+<button id="bouton" ng-click="ajouter()" type="button" class="w3-btn w3-red w3-round-small">GO</button>
+<p style="text-align: center;">Add an interesting places to our database with a right click on the map !!! </p>
+
+<div id="wrapper">
+<div class="vertical-menu">
+<button id="bouton" ng-click="calculer()" type="button" >Show path </button>
+<button id="bouton" ng-click="nettoyer()" type="button">Clear map </button>
+<button id="bouton" ng-click="choisir()" type="button">Show points of interest </button>
+  <div show-when-connected>
+<button id="bouton" ng-click="sauvegarder()" type="button" >Save my itinerary</button>
+</div>
+</div>
+<div id="map_container">
+  <my-maps id="map" ></my-maps>
+</div>
+</div>
+
+<button id="bouton" ng-click="gotohome()" type="button" class="w3-btn w3-red w3-round-small">Back</button>
+</div>
